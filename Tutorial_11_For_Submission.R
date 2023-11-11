@@ -17,8 +17,12 @@ ggplot(data = height_weight_data,
   theme(legend.title=element_blank())
 
 #Exercise 2 
-#Bar graph (similar to the bar plot example in today's tutorial)
+#Bar graph of the means of the four populations (similar to the bar plot example in today's tutorial)
 ggplot(data, aes(x = region, y = observations)) +
   stat_summary(fun.y = mean,
                geom = "bar") +
+  xlab("Region") +
+  ylab("Average observation")
   theme_bw()
+#Scatter plot of all of the observations
+#Answer:
