@@ -25,3 +25,9 @@ colnames(means) <- c("Region", "MeanObservations")
 ggplot(data = means, aes(x = Region, y = MeanObservations)) +
   geom_bar(stat = "identity", fill = "skyblue", color = "black") +
   labs(x = "Region", y = "Mean Observations", title = "Mean Observations by Region")
+
+# Scatter Plot
+ggplot(data, aes(x = region, y = observations)) +
+  geom_jitter(width = 0.2, height = 0, alpha = 0.5) +
+  labs(x = "Region", y = "Observations") +
+  ggtitle("Observations by Region with Jitter")
