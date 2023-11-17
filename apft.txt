@@ -1,4 +1,4 @@
-Name	Weight	APFT Score
+"Name"	"weight"	"score"
 Ethan Barhydt	176	591
 Jessica Bianco	112	547
 Michael Conde	203	589
