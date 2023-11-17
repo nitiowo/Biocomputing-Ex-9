@@ -22,7 +22,7 @@ ggplot(data=data, aes(x=region,y=observations)) + stat_summary(fun.y="mean",geom
 xlab("Population") + ylab("Observation Averages") + theme_classic()
 
 #Second plot: scatterplot
-ggplot(data=data, aes(x=population,y=observations)) +
+ggplot(data=data, aes(x=region,y=observations)) +
 geom_jitter() + xlab("Population") + ylab("Observations") + theme_classic()
 #The barplots and scatterplots tell different stories, the barplot only tells about the average, not the distribution
 #Scatterplot gives a more wholistic picture of because it provides insights into the distribution
