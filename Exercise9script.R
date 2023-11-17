@@ -18,7 +18,7 @@ data<-read.table("data.txt",header=TRUE,sep=",",stringsAsFactors = FALSE)
 dim(data)
 
 #First plot: barplot of the means of the 4 populations
-ggplot(data=data, aes(x=population,y=observations)) + stat_summary(fun.y="mean",geom="bar") + 
+ggplot(data=data, aes(x=region,y=observations)) + stat_summary(fun.y="mean",geom="bar") + 
 xlab("Population") + ylab("Observation Averages") + theme_classic()
 
 #Second plot: scatterplot
