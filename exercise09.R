@@ -22,7 +22,6 @@ data <- read.table("data.txt", header = TRUE, sep = ",", stringsAsFactors = FALS
 means <- aggregate(data$observations, by = list(data$region), FUN = mean)
 
 colnames(means) <- c("Region", "MeanObservations")
-
 ggplot(data = means, aes(x = Region, y = MeanObservations)) +
   geom_bar(stat = "identity", fill = "skyblue", color = "black") +
   labs(x = "Region", y = "Mean Observations", title = "Mean Observations by Region")
