@@ -9,7 +9,7 @@ library(ggplot2)
 scores<-read.table("apft.txt",header=TRUE,sep="\t", stringsAsFactors = FALSE)
 dim(scores)
 #This creates a scatter plot of "cadet weight" vs "APFT score"
-ggplot(soccer,aes(x=weight,y=position)) + geom_point() + 
+ggplot(scores,aes(x=weight,y=position)) + geom_point() + 
 xlab("Cadet Weigth (lbs.)") + ylab("APFT scores (out of 600)") + stat_smooth(method="lm") + theme_classic()
 
 #Question2
